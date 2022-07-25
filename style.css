@@ -29,7 +29,13 @@
 
   /* Size */
   --size-border-radius: 4px;
+
+  /* Annimation */
+  --aimation-duration: 300ms;
 }
+
+
+
 
 /* Universal tags */
 * {
@@ -53,14 +59,14 @@ ul {
 }
 
 li {
-    list-style:none;
+  list-style: none;
 }
 
 button {
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    outline:none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -135,23 +141,96 @@ p {
 }
 
 .home__avatar {
-    width:250px;
-    height:250px;
-    border-radius:50%;
-    border:2px solid var(--color-light-white);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
 }
 
 .home__title,
 .home__description {
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .home__contact {
-    color: var(--color-white);
-    font-size: var(--font-regular);
-    font-weight: var(--weight-bold);
-    margin:24px;
-    padding:8px 12px;
-    border: 2px solid var(--color-white);
-    border-radius: var(--size-border-radius);
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  margin: auto;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  color: var(--color-blue);
+}
+
+.major__icon i {
+  transition:all var(--aimation-duration) ease;
+}
+
+.major__icon:hover i {
+  color: var(--color-pink);
+  transform:rotate(-30deg) scale(1.1);
+}
+
+.major__title, .major__description {
+  color:var(--color-dark-grey);
+}
+
+.major__description {
+  font-size: var(--font-small;)
+}
+
+.school {
+  display:flex;
+  align-items:center;
+}
+
+.school__logo {
+  width:55px;
+  height:55px;
+}
+
+.school__description {
+  margin:0 16px;
+  text-align:left;
+}
+
+.school__name,
+.school__period {
+  color: var(--color-light-grey);
+}
+
+.school__name {
+  font-size:var(--font-small);
+}
+
+.school__period {
+  font-size:var(--font-micro);
 }
