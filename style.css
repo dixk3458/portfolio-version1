@@ -225,7 +225,7 @@ p {
 }
 
 .major__description {
-  font-size: var(--font-small;);
+  font-size: var(--font-small);
 }
 
 .school {
@@ -304,7 +304,6 @@ p {
 
 .tools {
   background-color:var(--color-grey);
-  margin-top
 }
 
 .tools,
